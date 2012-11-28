@@ -22,16 +22,16 @@
                                                        timeoutInterval:60];
     [request setHTTPMethod:@"POST"];
     NSMutableString *body = [[NSMutableString alloc] initWithFormat:@"FIRST_NAME=%@&LAST_NAME=%@&ADDRESS=%@&CITY=%@&STATE=%@&ZIP=%@&PHONE=%@&EMAIL=%@&GENDER=%@&AGE=%@&NOTES=%@",
-                      @"Mickey", 
-                      @"Mouse", 
+                      @"Donald", 
+                      @"Duck", 
                       @"123 Disney Dr.", 
-                      @"Los Angeles", 
+                      @"New York", 
                       @"CA", 
-                      @"12345", 
-                      @"215-232-2334", 
-                      @"mickey@disney.com", 
+                      @"00001", 
+                      @"315-333-4444", 
+                      @"donald@disney.com", 
                       @"male",
-                      @"99",
+                      @"91",
                       @"No Notes"];
     
     [request setHTTPBody: [body dataUsingEncoding:NSUTF8StringEncoding]] ; 
